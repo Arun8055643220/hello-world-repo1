@@ -1,10 +1,12 @@
+
 name: First Workflows
 
 on:
     push
 
 jobs:
-  runs-on: ubuntu-lastest
-  steps:
-    - name: echo text
-      run: echo "Hello, world!"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo text
+        run: echo "Hello, world!"
